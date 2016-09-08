@@ -1,0 +1,17 @@
+form Box1HouseOwning {
+	 hasSoldHouse: "Did you sell a house in 2010?" boolean
+	 hasBoughtHouse: "Did you by a house in 2010?" boolean
+	 hasMaintLoan: "Did you enter a loan for maintenance/reconstruction?" money
+	 if ( hasSoldHouse ) {
+	 	 typeAString: "I was hidden!" str
+		 sellingPrice: " (sellingPrice) Price the house was sold for:" money
+		 buyingPrice: " (buyingPrice * 5) BuyPrice" money (sellingPrice * 5)
+		 privateDebt: "(buyingPrice - sellingPrice)" money (buyingPrice - sellingPrice)
+		 stringResult: "You type, I appear!" str (typeAString)
+		 booleanResult: "You Choose, I appear!" boolean (hasBoughtHouse)
+	 } 
+	 if (false) {
+	 	qN: "Do not show me!" boolean
+	 }
+	
+}

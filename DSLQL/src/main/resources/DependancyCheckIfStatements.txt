@@ -1,0 +1,9 @@
+form DependancyCheckIfStatements {
+	 q1: "question 3" boolean (!(2+3) || false)
+	 q2: "question 3" boolean (q3)
+	 q3: "question 3" boolean (q4)
+	 q4: "question 3" boolean (q6 || q1)
+	 if (2 + true) {
+	 	q2: "question 3" boolean (q3)
+	 }
+}

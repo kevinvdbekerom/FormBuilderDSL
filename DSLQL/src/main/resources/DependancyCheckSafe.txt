@@ -1,0 +1,14 @@
+form DependancyCheck {
+	 q1: "question 1" boolean
+	 q2: "question 2" boolean
+	 if (q2) {
+	 	q4: "question 1" boolean
+	 }
+	 q3: "question 3" boolean
+	 if (q4 || q1 && q2 != q3) {
+	 	if (q2) {
+	 		q5: "question 5" boolean
+	 	}
+	 }
+	 q1: "question 6" money
+	}
